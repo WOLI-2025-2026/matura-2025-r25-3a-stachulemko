@@ -1,8 +1,5 @@
-
-
-
 f = open("/workspaces/matura-2025-r25-3a-stachulemko/src/symbole.txt")
-
+plik = open("/workspaces/matura-2025-r25-3a-stachulemko/src/wyniki/zad2output.txt", "w")
 tab = []
 end = 0
 count2 =0 
@@ -39,4 +36,6 @@ for linia in f:
 all= ""
 for elem in tabCount:
     all += f"{elem[0]} {elem[1]} "
+plik.write(all)
+plik.close()
 print(all)
